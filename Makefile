@@ -7,7 +7,7 @@ update:
 	docker pull ubuntu:${UBUNTU}
 
 build:
-	cd ubuntu-base && docker build -t okapilib/ubuntu-base:${UBUNTU} .
+	cd ubuntu-base && docker build -t rsthomas/ubuntu-base:${UBUNTU} .
 
 push:
-	docker push okapilib/ubuntu-base:${UBUNTU}
+	docker push rsthomas/ubuntu-base:${UBUNTU}
